@@ -79,13 +79,35 @@
 		text-decoration: underline;
 	}
 
-	/*end of nav bar styles*/
+	/*others*/
 
 	#img1{
 		margin: 6% 0 0 13%;
 		width: 70%;
 	}
 
+	/*footer styles*/
+	footer{
+	background-color: #fff;
+	text-align: center;
+	color: #2A3883;
+	position:relative;
+	font-size: 23px;
+	box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+	width: 100%;
+	font-family: 'Josefin Sans';
+}
+
+	.social{
+	width: 55px;
+	padding: 6px;
+}
+	
+	h6{
+	padding-top: 3%;
+}
+
+/*mobile styles*/
 @media screen and (max-width: 1125px){
 	
 	#img1{
@@ -189,7 +211,7 @@
       .nav-btn i:nth-child(3) {
             margin-top: 4px;
       }
-}
+
 
 	#nav:checked + .nav-btn {
 		  transform: rotate(45deg);
@@ -227,11 +249,7 @@
 	}
 
 
-	/*end of nav bar styles*/
-
-	
 }
-
 
 @media screen and (max-width: 864px) {
 	
@@ -371,5 +389,3 @@
 		  display: none;
 	}
 
-
-	/*end of nav bar styles*/
