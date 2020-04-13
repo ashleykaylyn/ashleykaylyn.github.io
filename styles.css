@@ -284,7 +284,7 @@
 	
       
             h6{
-                  padding: 20px;
+                  padding: 30px;
                   font-size: 18px;
             }
 
@@ -451,7 +451,7 @@
 }
 	
 	h6{
-                  padding: 20px;
+                  padding: 30px;
                   font-size: 18px;
             }
 
@@ -534,7 +534,7 @@ img {vertical-align: middle;}
 
 @media screen and (max-width: 604px){
       h6{
-            padding: 20px;
+            padding: 30px;
             font-size: 14px;
       }
 
