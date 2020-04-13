@@ -24,7 +24,10 @@
 		position: relative;
 	}
 
-	
+	section{
+            background-color: #fff;
+      }
+
 	/*nav bar styles*/
 	nav {
 		  margin: 0 auto;
