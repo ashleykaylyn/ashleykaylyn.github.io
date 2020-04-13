@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Amethysta&family=Josefin+Slab&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="imgs/favicon.png">
+</head>
+
+<body>
+
+	
+	<nav>
+       <input type="checkbox" id="nav" class="hidden">
+       <label for="nav" class="nav-btn">
+          <i></i>
+          <i></i>
+          <i></i>
+          </label>
+          <div class="logo">
+          	<a href="index.html">Ashley Chavis</a>
+          </div>
+          <div class="nav-wrapper">
+          <ul>
+			   <li><a href="index.html">Home</a></li>
+			   <li><a href="portfolio.html" class="selcted">Portfolio</a></li>
+			   <li><a href="video.html">Projects</a></li>
+			   <li><a href="audio.html">Contact</a></li>
+              </ul>
+          </div>
+       </nav>
+	<main>
+		
+
+		<br>
+
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 3</div>
+			  <img src="imgs/1.gif" style="width:100%" alt="1">
+			  <div class="text">Caption Text</div>
+			</div>
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 3</div>
+			  <img src="imgs/2.gif" style="width:100%" alt="2">
+			  <div class="text">Caption Two</div>
+			</div>
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 3</div>
+			  <img src="imgs/3.gif" style="width:100%" alt="3">
+			  <div class="text">Caption Three</div>
+			</div>
+			
+			</div>
+			<br>
+			
+			<div style="text-align:center">
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			</div>
+	
+		<br>
+
+		<section>
+			<img src="imgs/logo.png" alt="logo" width="7%">
+			<br>
+			<p>Hi! I'm Ashley Chavis and I'm a computer science student. Feel free to browse through my website, for there are examples of my work and more about me!!</p>
+		</section>
+
+		<br>
+
+		<div class="row">
+			<div class="column">
+			  <img src="imgs/2.gif" alt="2" style="width:100%">
+			</div>
+			<div class="column">
+			  <img src="imgs/1.gif" alt="1" style="width:100%">
+			</div>
+		  </div>
+
+
+		  <script>
+			var slideIndex = 0;
+			showSlides();
+			
+			function showSlides() {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("dot");
+			  for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			  }
+			  slideIndex++;
+			  if (slideIndex > slides.length) {slideIndex = 1}    
+			  for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			  setTimeout(showSlides, 2000); // Change image every 2 seconds
+			}
+			</script>
+
+
+	</main>
+	<footer>
+		<h6>Designed By Ashley Chavis &#124; &#169;Copyright 2019 Ashley Chavis</h6>
+		<a target="_blank" href="https://www.instagram.com/ash.kaylyn/"><img class="social" src="imgs/instagram.png" alt="instagram"></a>
+		<a target="_blank" href="https://github.com/ashleykaylyn"><img  class="social" src="imgs/github.png" alt="github"></a>
+		<a href="mailto: ashleychavis.16@gmail.com"><img class="social" src="imgs/mail.png" alt="mail"></a>
+		<img class="up-arrow-bg" src="imgs/Up-Arrow-BG.png" alt="Up Arrow Background">
+		<img class="up-arrow" src="imgs/Up-Arrow.png" alt="Up Arrow Icon">
+	</footer>
+</body>
+</html>
