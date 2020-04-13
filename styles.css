@@ -115,7 +115,7 @@
 	
 	h6{
       padding-top: 3%;
-      font-size: 16px;
+      font-size: 20px;
 }
 
 /*mobile styles*/
@@ -281,7 +281,13 @@
 			padding-top: 3%;
 		}
 	
-	
+      
+            h6{
+                  padding: 20px;
+                  font-size: 10px;
+            }
+
+
 }
 
 @media screen and (max-width: 964px) {
