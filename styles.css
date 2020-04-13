@@ -484,6 +484,7 @@ img {vertical-align: middle;}
 
 /* Number text (1/3 etc) */
 .numbertext {
+  display: none;
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
@@ -533,7 +534,8 @@ img {vertical-align: middle;}
 @media screen and (max-width: 604px){
       h6{
             padding: 20px;
-            font-size: 18px;
+            font-size: 14px;
+            color: red;
       }
 
 }
