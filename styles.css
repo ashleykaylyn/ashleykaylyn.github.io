@@ -14,7 +14,13 @@
       height: 100vh;
 	}
 
-      
+      #page{
+            background-color: #e0d5df;
+            background-image: url(imgs/404.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+      }
+
 
 	html {
 		  padding: 0;
