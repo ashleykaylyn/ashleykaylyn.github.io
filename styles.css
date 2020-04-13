@@ -531,7 +531,9 @@ img {vertical-align: middle;}
 
 
 @media screen and (max-width: 604px){
-      body{
-            background-color: red;
+      h6{
+            padding: 20px;
+            font-size: 18px;
       }
+
 }
