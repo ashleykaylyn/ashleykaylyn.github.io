@@ -467,6 +467,7 @@ img {vertical-align: middle;}
 /* Caption text */
 .text {
   color: #f2f2f2;
+  display: none;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
