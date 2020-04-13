@@ -393,7 +393,7 @@
       }
 
 
-
+}
 
 	#nav:checked + .nav-btn {
 		  transform: rotate(45deg);
@@ -454,7 +454,7 @@
                   font-size: 18px;
             }
 
-}
+
 
 
 
