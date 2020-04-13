@@ -82,7 +82,7 @@
 	/*others*/
 
 	#img1{
-		margin: 6% 0 0 13%;
+		margin: 6% 0 0 14%;
 		width: 70%;
 	}
 
@@ -112,7 +112,7 @@
 	
 	#img1{
 		width: 80%;
-		margin: 6% 0 0 10%;
+		margin: 6% 0 0 16%;
 	}
 	
 	/*nav bar styles*/
@@ -273,7 +273,7 @@
 	
 }
 
-@media screen and (max-width: 864px) {
+@media screen and (max-width: 964px) {
 	
 	#img1{
 		width: 60%;
