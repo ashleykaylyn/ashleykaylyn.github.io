@@ -30,12 +30,7 @@
 	  setTimeout(showSlides, 2000); // Change image every 2 seconds
 	}
 
-	$(document).ready(function(){
-	$('.up-arrow').click(function(){
-		$("html, body").animate({ scrollTop: 0 }, 500);
-		return false;
-	});
-});
+	
 	</script>
 
 
@@ -116,7 +111,14 @@
 			</div>
 		  </div>
 
-
+		  <script>
+					$(document).ready(function(){
+			$('.up-arrow').click(function(){
+				$("html, body").animate({ scrollTop: 0 }, 500);
+				return false;
+			});
+		});
+		  </script>
 
 
 	</main>
