@@ -26,6 +26,10 @@
 
 	section{
             background-color: #fff;
+            text-align: center;
+            font-family: 'Amethysta', serif;
+            color: #2A3883;
+            font-size: 30px;
       }
 
 	/*nav bar styles*/
