@@ -7,6 +7,38 @@
 <link href="https://fonts.googleapis.com/css2?family=Amethysta&family=Josefin+Slab&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="imgs/favicon.png">
+
+
+<script>
+	var slideIndex = 0;
+	showSlides();
+	
+	function showSlides() {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) {slideIndex = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	  setTimeout(showSlides, 2000); // Change image every 2 seconds
+	}
+
+	$(document).ready(function(){
+	$('.up-arrow').click(function(){
+		$("html, body").animate({ scrollTop: 0 }, 500);
+		return false;
+	});
+});
+	</script>
+
+
 </head>
 
 <body>
@@ -77,35 +109,12 @@
 
 		<div class="row">
 			<div class="column">
-			  <img src="imgs/2.gif.jpg" alt="2" style="width:100%">
+			  <img src="imgs/2.gif" alt="2" style="width:100%">
 			</div>
 			<div class="column">
 			  <img src="imgs/1.gif" alt="1" style="width:100%">
 			</div>
 		  </div>
-
-		<script>
-		var slideIndex = 0;
-		showSlides();
-		
-		function showSlides() {
-		  var i;
-		  var slides = document.getElementsByClassName("mySlides");
-		  var dots = document.getElementsByClassName("dot");
-		  for (i = 0; i < slides.length; i++) {
-			slides[i].style.display = "none";  
-		  }
-		  slideIndex++;
-		  if (slideIndex > slides.length) {slideIndex = 1}    
-		  for (i = 0; i < dots.length; i++) {
-			dots[i].className = dots[i].className.replace(" active", "");
-		  }
-		  slides[slideIndex-1].style.display = "block";  
-		  dots[slideIndex-1].className += " active";
-		  setTimeout(showSlides, 2000); // Change image every 2 seconds
-		}
-		</script>
-
 
 
 
