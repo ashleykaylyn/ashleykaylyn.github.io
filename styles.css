@@ -14,6 +14,10 @@
       height: 100vh;
 	}
 
+      .dog{
+            background-color: #e0d5df;
+      }
+
 	html {
 		  padding: 0;
 		  width: 100%;
