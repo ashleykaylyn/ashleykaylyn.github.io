@@ -155,7 +155,7 @@
             display: block;
             float: none;
             width: 100%;
-            text-align: right;
+            text-align: center;
             margin-bottom: 10px;
       }
 
@@ -291,6 +291,7 @@
 
 }
 
+
 @media screen and (max-width: 964px) {
 	
 	#img1{
@@ -321,7 +322,7 @@
       }
 
       .nav-wrapper ul li {
-            display: inline-block;
+            display: block;
             float: none;
             width: 100%;
             text-align: center;
