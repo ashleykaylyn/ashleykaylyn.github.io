@@ -34,9 +34,6 @@
             text-transform: lowercase;
       }
 
-      .logo{
-            width: 7%;
-      }
 
 	/*nav bar styles*/
 	nav {
@@ -541,8 +538,5 @@ img {vertical-align: middle;}
             font-size: 14px;
       }
 
-      .logo{
-            width: 10%;
-      }
 
 }
