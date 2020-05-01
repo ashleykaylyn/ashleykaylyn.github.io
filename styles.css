@@ -83,7 +83,6 @@
                background-color: white;
                padding: 13px;
                margin-top: 0;
-               margin-bottom: 3%;
          }
 
 	  .column {
@@ -316,7 +315,7 @@
             input[type='text'], [type='email'], select, textarea {
               font-size: 0.875em;
             }
-      }
+      
           /*end of contact styles*/
 
 
@@ -327,7 +326,7 @@
             padding: 60px;
           }
 
-
+      }
         
           /* Clearfix (clear floats) */
           .row::after {
