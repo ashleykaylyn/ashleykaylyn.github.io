@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Amethysta&family=Josefin+Slab&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="imgs/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+	<script>
+		$(document).ready(function(){
+			$('.up-arrow').click(function(){
+				$("html, body").animate({ scrollTop: 0 }, 500);
+				return false;
+			});
+		});
+	</script>
+
+<body>
+	<main>
+	<nav>
+       <input type="checkbox" id="nav" class="hidden">
+       <label for="nav" class="nav-btn">
+          <i></i>
+          <i></i>
+          <i></i>
+          </label>
+          <div class="logo">
+          	<a href="index.html">Ashley Chavis</a>
+          </div>
+          <div class="nav-wrapper">
+          <ul>
+			<li><a href="index.html" class="selcted">Home</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="contact.html">Contact</a></li>
+          </ul>
+          </div>
+	   </nav>
+	   
+	
+	<h1>hi, i'm ashley!</h1>
+	<h2>graphic design, web development & computer science</h2>
+<br>
+	
+	   
+	   <img src="imgs/me.png" alt="me" width="30%" class="me">
+
+
+	   <p class="caption1">This is my portfolio website! Please feel free to browse my work, and contact me for any further questions!!</p>
+
+	</main>
+	<br>
+	<footer>
+		<a target="_blank" href="insta.html"><img class="social" src="imgs/instagram.png" alt="instagram"></a>
+		<a target="_blank" href="https://github.com/ashleykaylyn"><img  class="social" src="imgs/github.png" alt="github"></a>
+		<a href="mailto: ashleychavis.16@gmail.com"><img class="social" src="imgs/mail.png" alt="mail"></a>
+
+	<div class="linkss">
+		<a href="index.html" style="text-decoration: underline;">Home</a>
+		<a href="portfolio.html">Portfolio</a>
+		<a href="contact.html">Contact</a>
+	</div>
+	
+		<h6> &#169;Copyright 2020 Ashley Chavis</h6>
+		<img class="up-arrow-bg" src="imgs/Up-Arrow-BG.png" alt="Up Arrow Background">
+		<img class="up-arrow" src="imgs/Up-Arrow.png" alt="Up Arrow Icon">
+	</footer>
+
+		
+
+			<!-- Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163574862-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-163574862-1');
+		</script>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Amethysta&family=Josefin+Slab&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="imgs/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<script>
+	$(document).ready(function(){
+		$('.up-arrow').click(function(){
+			$("html, body").animate({ scrollTop: 0 }, 500);
+        	return false;
+    	});
+	});
+</script>
+
+<body>
+
+	
+	<nav>
+       <input type="checkbox" id="nav" class="hidden">
+       <label for="nav" class="nav-btn">
+          <i></i>
+          <i></i>
+          <i></i>
+          </label>
+          <div class="logo">
+          	<a href="index.html">Ashley Chavis</a>
+          </div>
+          <div class="nav-wrapper">
+          <ul>
+			   <li><a href="index.html">Home</a></li>
+			   <li><a href="portfolio.html" class="selcted">Portfolio</a></li>
+			   <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+       </nav>
+	<main>
+		
+		<br>
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 5</div>
+			  <img src="imgs/grids.jpg" style="width:100%" alt="1">
+			  <div class="text">Caption Text</div>
+			</div>
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 5</div>
+			  <img src="imgs/1.jpg" style="width:100%" alt="2">
+			  <div class="text">Caption Two</div>
+			</div>
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 5</div>
+			  <img src="imgs/2.jpg" style="width:100%" alt="3">
+			  <div class="text">Caption Three</div>
+			</div>
+			
+			<div class="mySlides fade">
+				<div class="numbertext">4 / 5</div>
+				<img src="imgs/3.jpg" style="width:100%" alt="4">
+				<div class="text">Caption Four</div>
+			  </div>
+			  
+			  <div class="mySlides fade">
+				<div class="numbertext">5 / 5</div>
+				<img src="imgs/4.jpg" style="width:100%" alt="5">
+				<div class="text">Caption Five</div>
+			  </div>
+	</div>
+	<br>
+			
+			<div style="text-align:center">
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			</div>
+
+
+			<script>
+				var slideIndex = 0;
+				showSlides();
+					
+				function showSlides() {
+					var i;
+					var slides = document.getElementsByClassName("mySlides");
+					var dots = document.getElementsByClassName("dot");
+						for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";  
+						  }
+						 slideIndex++;
+						 if (slideIndex > slides.length) {slideIndex = 1}    
+						  for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+						 }
+						  slides[slideIndex-1].style.display = "block";  
+						  dots[slideIndex-1].className += " active";
+						  setTimeout(showSlides, 2000); // Change image every 2 seconds
+					}
+			</script>
+			<br>
+
+			<section>
+				<p style="text-transform: capitalize;">
+					This is an example of some of my design work, called <b><i>The Evolution of Nintendo</i></b>
+					<br>
+				</p>
+			</section>
+          
+          <div class="row">
+			<div class="column">
+			  <img src="imgs/1.jpg" alt="1" style="width:100%">
+			  <p class="caption">The Gameboy was created in 1989</p>
+			</div>
+			<div class="column">
+			  <img src="imgs/2.jpg" alt="2" style="width:100%">
+			  <p class="caption">The Gameboy Advance was created in 2001</p>
+			</div>
+		  </div>
+		  
+		  <div class="row">
+			<div class="column">
+			  <img src="imgs/4.jpg" alt="4" style="width:100%">
+			  <p class="caption">The Nintendo DS was created in 2004</p>
+			</div>
+			<div class="column">
+			  <img src="imgs/3.jpg" alt="3" style="width:100%">
+			  <p class="caption">The Nintendo Switch was created in 2019</p>
+			</div>
+		  </div>
+
+	</main>
+	<footer>
+		<a target="_blank" href="insta.html"><img class="social" src="imgs/instagram.png" alt="instagram"></a>
+		<a target="_blank" href="https://github.com/ashleykaylyn"><img  class="social" src="imgs/github.png" alt="github"></a>
+		<a href="mailto: ashleychavis.16@gmail.com"><img class="social" src="imgs/mail.png" alt="mail"></a>
+
+		<div class="linkss">
+			<a href="index.html">Home</a>
+			<a href="portfolio.html" style="text-decoration: underline;">Portfolio</a>
+			<a href="contact.html">Contact</a>
+		</div>
+
+		<h6> &#169;Copyright 2020 Ashley Chavis</h6>
+		<img class="up-arrow-bg" src="imgs/Up-Arrow-BG.png" alt="Up Arrow Background">
+		<img class="up-arrow" src="imgs/Up-Arrow.png" alt="Up Arrow Icon">
+	</footer>
+
+    
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163574862-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-163574862-1');
+        </script>
+
+</body>
+</html>
