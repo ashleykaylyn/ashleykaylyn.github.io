@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(images/bg_image.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+nav {
+  text-align: center;
+  padding: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+  font-size: 25px;
+}
+
+nav a:hover {
+  color: #eda49d;
+  text-decoration: underline;
+}
+
+.selected {
+  color: #eda49d;
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 11%;
+  padding: 30px;
+  font-size: 90px;
+  color: #d1bddb;
+  font-family: "Open Sans", sans-serif;
+}
+
+h2 {
+  text-align: center;
+  padding: 15px;
+  font-size: 40px;
+  color: #d1bddb;
+}
+
+.icon-bar {
+  width: 5%;
+  float: left;
+  position: relative;
+}
+
+.icon-bar a {
+  display: block;
+  font-size: 36px;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  opacity: 65%;
+}
+
+.icon-bar a:hover {
+  color: #5e4f70;
+  opacity: 70%;
+}
+
+.container {
+  padding: 10px;
+}
+
+.arrow {
+  margin: 15% 0 0 42%;
+  width: 100%;
+  max-width: 70px;
+}
+
+#section1 {
+  background-color: #afa0ba;
+  margin-top: 8%;
+}
+
+.section1 {
+  text-align: center;
+  margin-top: 5%;
+  padding: 100px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 60px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 2%;
+}
+
+.text {
+  display: none;
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  display: none;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #afa0ba;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+footer{
+  background-color: #afa0ba;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* mobile styles */
+@media screen and (max-width: 1125px) {
+  h1 {
+    font-size: 70px;
+  }
+
+  .column {
+    width: 100%;
+    padding: 40px;
+  }
+  
+  .arrow{
+    margin: 15% 0 0 38%;
+  }
+}
