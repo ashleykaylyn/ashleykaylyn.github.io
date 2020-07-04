@@ -156,11 +156,19 @@ h6{
 
 
 /*MOBILE STYLES*/
-@media only screen and (max-width: 1340px) {
+@media only screen and (max-width: 1370px) {
+  h1{
+    font-size: 80px;
+  }
+  
+  nav a{
+    font-size: 30px;
+  }
+
   section{
     width: 100%;
     padding: 40px;
-    font-size: 40px;
+    font-size: 50px;
     box-shadow: 4px 4px 9px 0px rgba(224,213,191,0.78);
     margin-bottom: 7.6%;
   }
