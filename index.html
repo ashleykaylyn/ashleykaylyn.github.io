@@ -2,131 +2,41 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Home</title>
+    <title>HOME</title>
     <link rel="stylesheet" href="styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="images/favicon.png" />
+    <link rel="icon" href="imgs/favicon.png" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap"
       rel="stylesheet"
-      type="text/css"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
+
   <body>
-    <nav>
-      <a href="index.html" class="selected">Home</a>
-      <a href="#portfolio">Portfolio</a>
-    </nav>
+    <div class="style fade-in">
+      <h1>ASHLEY CHAVIS</h1>
 
-    <h1>Ashley Chavis</h1>
-    <h2>web dev & computer science;</h2>
-    <br />
+      <nav>
+        <a href="index.html" class="selected">HOME</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
 
-    <div class="container">
-      <div class="icon-bar">
-        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        <a target="_blank" href="https://github.com/ashleykaylyn"
-          ><i class="fa fa-github" aria-hidden="true"></i
-        ></a>
-        <a target="_blank" href="mailto: ashleychavis.16@gmail.com"
-          ><i class="fa fa-envelope" aria-hidden="true"></i
-        ></a>
-      </div>
-    </div>
-
-    <a href="#section1"
-      ><img src="images/arrow.png" alt="arrow" width="100%" class="arrow"
-    /></a>
-
-    <div id="section1">
-      <p class="section1">
-        Here is some of my latest design work called
-        <i><b>The Evolution of Nintendo</b></i>
-      </p>
-    </div>
-
-    <br />
-
-    <div id="portfolio">
-      <div class="slideshow-container">
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 4</div>
-          <img src="images/1.jpg" style="width: 100%;" alt="1" />
-          <div class="text">Caption Text</div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 4</div>
-          <img src="images/2.jpg" style="width: 100%;" alt="2" />
-          <div class="text">Caption Two</div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 4</div>
-          <img src="images/3.jpg" style="width: 100%;" alt="3" />
-          <div class="text">Caption Three</div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">4 / 4</div>
-          <img src="images/4.jpg" style="width: 100%;" alt="4" />
-          <div class="text">Caption Four</div>
-        </div>
-      </div>
       <br />
 
-      <div style="text-align: center;">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
-      <br />
-      <script>
-        var slideIndex = 0;
-        showSlides();
+      <section>
+       <p>
+           Hi welcome to my portfolio website! I'm currently a high school senior planning on studying something in the STEM field
+            such as Computer Science! On the portfolio page you can find some of my work done in Python and how I'm planning on learning
+             new languages as I develop new projects. If you wish to contact me, reach me by filling out the form on the
+             contact page. Thank you, have a great day!
+        </p> 
+      </section>
 
-        function showSlides() {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {
-            slideIndex = 1;
-          }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex - 1].style.display = "block";
-          dots[slideIndex - 1].className += " active";
-          setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-      </script>
+      <br>
+
+     <footer>
+      <h6>&copy;Copyright 2020 Ashley Chavis</h6> 
+     </footer>
     </div>
-
-    <div class="row">
-      <div class="column">
-        <img src="images/1.jpg" alt="1" style="width: 100%;" />
-      </div>
-      <div class="column">
-        <img src="images/2.jpg" alt="2" style="width: 100%;" />
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="column">
-        <img src="images/4.jpg" alt="4" style="width: 100%;" />
-      </div>
-      <div class="column">
-        <img src="images/3.jpg" alt="3" style="width: 100%;" />
-      </div>
-    </div>
-
-    <footer>
-      &copy;Copyright 2020 Ashley Chavis
-    </footer>
   </body>
 </html>
