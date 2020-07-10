@@ -6,55 +6,75 @@
 }
 
 body {
-  background-color: #f1ebde;
-}
-
-h1 {
-  color: #28524f;
-  font-family: "Playfair Display", serif;
-  font-size: 70px;
-  text-align: center;
-  padding: 14px;
-}
-
-h2{
-  font-size: 40px;
-  font-family: "Playfair Display", serif;
+  background-image: url(images/bg_image.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
 }
 
 nav {
-  padding: 7px;
   text-align: center;
+  padding: 30px;
 }
 
 nav a {
   text-decoration: none;
-  color: #28524f;
-  font-size: 25px;
-  padding: 5px;
+  color: #fff;
+  padding: 15px;
+  font-size: 30px;
+  text-shadow: 3px 3px 6px rgb(7, 13, 34);
 }
 
-nav a.selected {
+nav a.selected{
   text-decoration: underline;
 }
 
-section{
-    text-align: center;
-    margin: auto;
-    background-color: #fff;
-    color: #28524f;
-    width: 85%;
-    margin-top: 5%;
-    padding: 100px;
-    font-size: 40px;
-    box-shadow: 4px 4px 9px 0px rgba(224,213,191,0.78);
-    margin-bottom: 7.6%;
+h1 {
+  text-align: center;
+  margin-top: 8%;
+  padding: 20px;
+  font-size: 120px;
+  color: #FBF0EF;
+  font-family: 'Playfair Display', serif;
 }
 
-.projects{
-  padding: 40px 20px 20px 20px;
-  max-width: 1000px;
+h2 {
+  text-align: center;
+  padding: 10px;
+  font-size: 50px;
+  color: #FBF0EF;
 }
+
+section{
+  background-color: #fdf9f9;
+  width: 80%;
+  margin: auto;
+  margin-top: 3%;
+  text-align: center;
+}
+
+.code{
+  max-width: 1250px;
+  padding: 30px;
+}
+
+article{
+  background-color: #fdf9f9;
+  width: 80%;
+  margin: auto;
+  margin-top: 4%;
+  text-align: center;
+  padding: 30px;
+}
+
+label{
+  font-size: 30px;
+  color: #7e6b7c;
+  font-family: 'Playfair Display', serif;
+  padding: 20px;
+}
+
+
 
 button{
   box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -81,104 +101,69 @@ button:hover{
   top: 1px;
 }
 
-button:active{
-  position: relative;
-  top: 1px;
-}
-
 footer{
   text-align: center;
+  font-size: 25px;
+  background-color: #FBF0EF;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  color: #9b8198;
   height: 140px;
-  background-color: #446e6c;
+  padding: 30px;
+  box-shadow: 0px -5px 5px 0px #7e6b7c;
+  position: absolute;
+ bottom: 0;
+ width: 100%;
+}
+
+#footer{
+  text-align: center;
+  font-size: 25px;
+  background-color: #FBF0EF;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  color: #9b8198;
+  height: 140px;
+  padding: 30px;
+  box-shadow: 0px -5px 5px 0px #7e6b7c;
   position: relative;
+ bottom: 0;
+ width: 100%;
 }
 
-h6{
-  color: #fff;
-  padding-top: 55px;
-  font-size: 26px;
-  font-family: "Playfair Display", serif;
+.social{
+  width: 100%;
+  max-width: 50px;
+  padding: 5px;
 }
 
-/*FADE IN*/
-.fade-in {
-  animation: fadeIn ease 2pls;
-  -webkit-animation: fadeIn ease 2s;
-  -moz-animation: fadeIn ease 2s;
-  -o-animation: fadeIn ease 2s;
-  -ms-animation: fadeIn ease 2s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.social:hover{
+  opacity: 60%;
 }
 
 
-/*MOBILE STYLES*/
-@media only screen and (max-width: 1370px) {
-  h1{
-    font-size: 90px;
+
+/* mobile styles */
+@media screen and (max-width: 991px) {
+  /* start of large tablet styles */
+    h1{
+      margin-top: 15%;
+      font-size: 95px;
+    }
+
+    section{
+      width: 100%;
+    }
+
+    article{
+      width: 100%;
+    }
+
+    .code{
+      max-width: 2000px;
+      padding: 5px;
+      margin-top: 3%;
+    }
+
   }
   
-  nav a{
-    font-size: 40px;
-  }
-
-  section{
-    width: 100%;
-    padding: 40px;
-    font-size: 50px;
-    box-shadow: 4px 4px 9px 0px rgba(224,213,191,0.78);
-    margin-bottom: 7.6%;
-  }
-
-  h6{
-    font-size: 36px;
-  }
-
-  .projects{
-    padding: 40px 5px 5px 5px;
-    max-width: 2000px;
-  }
-}
