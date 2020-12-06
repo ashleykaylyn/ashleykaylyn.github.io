@@ -1,28 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Home</title>
-    <link rel="stylesheet" href="styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="images/favicon.png">
-  </head>
-  <body>
-    <nav>
-      <a href="index.html" class="selected">Home</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+<head>
+<meta charset="utf-8">
+<title>AC - HOME</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="imgs/favicon.png"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> 
+</head>
 
-    <h1>Ashley Chavis</h1>
-    <h2>web dev & computer science;</h2>
-    <br>
-    <footer>
-      <a href="https://github.com/ashleykaylyn" target="_blank"><img src="images/github.png" alt="Github Icon" class="social"></a>
-      <a href="#"><img src="images/instagram.png" alt="Instagram Icon" class="social"></a>
-      <a href="mailto: ashleychavis.16@gmail.com" target="_blank"><img src="images/mail.png" alt="Mail Icon" class="social"></a>
+<body>
+	<div class="wrapper">
+     <nav>
+       <input type="checkbox" id="nav" class="hidden">
+       <label for="nav" class="nav-btn">
+          <i></i>
+          <i></i>
+          <i></i>
+          </label>
+          <div class="logo">
+          	<a href="index.html">AC</a>
+          </div>
+          <div class="nav-wrapper">
+          <ul>
+			   <li><a href="index.html" class="selcted">Home</a></li>
+			   <li><a href="#.html">Portfolio</a></li>
+			   <li><a href="#.html">Contact</a></li>
+              </ul>
+          </div>
+       </nav>
+		<div class="header">
+		<h1>Ashley Chavis</h1>
+	 	</div>
+
+
+				<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>About</h3>
+      <p>Hi I'm Ashley! I'm currently a high school student planning on studying
+        something in the STEM field, whether it be computer science or something
+        with chemistry. Feel free to browse my portfolio website to learn more!
+      </p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Portfolio</h3>
+      <p>On the portfolio page you can find some of my mini
+        Python projects I have created recently!
+      These include: Rock Paper Scissors, Guess The Number and a Joke Telling Program.</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Contact</h3>
+      <p style="padding-top: 25px;">If you would like to contact me, feel free to use the form on the contact page
+        that directly sends me an email!
+      </p>
       <br>
-      &copy;Copyright 2020 Ashley Chavis
-    </footer>
-  </body>
+    </div>
+  </div>
+	</div>
+		
+    <br>  
+  
+	<footer>
+		&#64;Copyright 2020 │ Ashley Chavis
+		</footer>
+		
+      </div>
+</body>
 </html>
